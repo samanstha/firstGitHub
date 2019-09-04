@@ -7,21 +7,21 @@ git:
   depth: false
   
 before_cache:
-  -brew cleanup
+  - brew cleanup
 
 cache:
-  -directories:
-  -$HOME/Library/Cache/Homebrew
+  - directories:
+  - $HOME/Library/Cache/Homebrew
   
 before_install:
-  -whoami
-  -echo "Start of pipeline"
-  -HOMEBREW_NO_AUTO_UPDATE=1
+  - whoami
+  - echo "Start of pipeline"
+  - HOMEBREW_NO_AUTO_UPDATE=1
   
 script:
-  -ls
-  -chmod +x hello.sh
-  -./hello.sh
+  - ls
+  - chmod +x hello.sh
+  - ./hello.sh
  
 atter_script:
-  -echo "End of pipleine"
+  - echo "End of pipleine"
