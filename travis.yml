@@ -1,17 +1,7 @@
 os:osx
-osx_iamge:xcod10.2
+osx_image:xcod10.2
 
 language:bash
-
-git:
-  depth: false
-  
-before_cache:
-  - brew cleanup
-
-cache:
-  - directories:
-  - $HOME/Library/Cache/Homebrew
   
 before_install:
   - whoami
