@@ -13,5 +13,5 @@ script:
   - chmod +x hello.sh
   - ./hello.sh
  
-atter_script:
+after_script:
   - echo "End of pipleine"
